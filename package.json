@@ -1,11 +1,15 @@
 {
   "name": "sih-project-2025-gyan-setu-backend",
-  "version": "0.0.0",
-  "description": "",
-  "main": "dist/index.js",
+  "version": "0.1.0",
+  "description": "RESTful API backend for gyan-setu",
+  "main": "dist/server.js",
   "scripts": {
     "build": "tsc",
-    "dev": "node --watch --env-file=.env --import=tsx src/server.ts"
+    "dev": "node --watch --env-file=.env --import=tsx src/server.ts",
+    "start": "node dist/server.js",
+    "version:major": "npm version major --no-git-tag-version",
+    "version:minor": "npm version minor --no-git-tag-version",
+    "version:patch": "npm version patch --no-git-tag-version"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
